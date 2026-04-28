@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    font-size: 1.1em;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 70px;
+}
+nav .logo{ transform:scale(0.5) ; -webkit-transform:scale(0.5) ; -moz-transform:scale(0.5) ; -ms-transform:scale(0.5) ; -o-transform:scale(0.5) ;
+}
+nav .navbar{
+    display: flex;
+    margin-right: 5%;
+    align-items: center;
+    
+}
+nav .navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    padding: 5px 18px;
+}
+
+nav .navbar .active{
+    background-color:rgb(4, 107, 50);
+    width: auto;
+    height: 65px;
+    color: #d4edda;
+    display: flex;
+    align-items: center;
+    
+}
+nav .navbar a:hover:not(.active){
+    color: rgb(10, 143, 10);
+}
+.acclogin{
+    background-color:rgb(4, 107, 50) ;
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    
+}
+header .acclogin a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+header .acclogin a:hover{
+   background-color:rgb(98, 153, 123) ;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   padding: 10px 15px;
+   transition:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+   -webkit-transition:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+   -moz-transition:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+   -ms-transition:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+   -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}  
+.navbar .active:active{
+    background-color:rgb(4, 107, 50) ;
+    color: white;
+    height: auto;  
+}
+main{
+    display: flex;
+
+    height: 100vh;
+}
+aside{
+    background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)),url("images/cacbg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 40px ;
+}
+aside .notice{
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    max-height: 500px;
+
+}
+.notice img{
+    width: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+aside h1{
+    color: rgb(228, 232, 0);
+    margin-bottom: 15px;
+
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(252, 251, 251);
+    
+}
+section .note{
+    max-width:500px;
+    background-color: rgb(252, 253, 244);
+    border: 1px solid rgb(230, 232, 167);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: green;
+}
+section .note a{
+    color: green;
+}
+
+section form .info{
+    background-color: white;
+    width: 500px ;
+}
+.info .infonav{
+    box-sizing: border-box;
+    max-width:500px;
+    max-height: 50px;
+    margin-bottom: 20px;
+    /* margin-right: 5px; */
+}
+section form .info ul{
+    display: flex;   
+    justify-content: space-evenly;
+    
+}
+section form .info ul li{
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: grey;   
+    padding: 5px;
+}
+section form .info .con{
+    padding: 20px;
+}
+section form .info .acc{
+    background-color: rgb(240, 250, 240);
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-height: 50px;
+    border: 1px solid rgb(216, 216, 216);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+section form .info .password{
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-height: 50px;
+    border: 1px solid rgb(216, 216, 216);
+     padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 250, 240);
+}
+section form .info .con .alt{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.but1{
+    height: 70px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 46%;
+    height: 45px;
+    
+}
+.but2{
+    color: grey;
+    margin-bottom: 20px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+
+    
+}
+.but2 a{
+    text-decoration: none;
+    color: green;
+}
+.but3{
+    background-color: rgb(225, 250, 225);
+     padding: 10px 180px;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+footer{
+    padding: 20px 0px;
+    font-size:  1.1em;
+    background-color: rgb(114, 115, 118);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}

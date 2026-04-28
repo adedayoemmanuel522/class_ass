@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 1em;
+}
+h1,h2,h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: 5s ease-in-out;
+    
+    
+}
+nav a:hover{
+    text-decoration:underline ;
+}
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: rgb(255, 214, 222);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3em ;
+}
+header img{
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+.text-container{
+    flex: 0 1 34em;
+}
+h1{
+    font-size: 2.5em;
+}
+.text-container p{
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: .75em 1.25em;
+    background-color: crimson;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.cta_2{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: .75em 1.25em;
+    background-color: rgb(70, 14, 126);
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+section{
+    padding: 3em min(2em, 15%);
+    background-color: rgb(221, 199, 243);
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+}
+section p{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section#my_work{
+    background-color: rgb(221, 199, 243);
+}
+
+.grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+.grid-container img{
+    height:100% ;
+    width: 100%;
+    transition:100ms ease ;
+    border-radius: .5em;
+}
+.grid-container img:hover{
+    scale: 1.05;
+}
+details{
+    margin-top: 1em;
+    background-color:rgb(221, 199, 243);;
+    border-radius: 1em; 
+}
+details summary{
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+details p{
+    padding: 0 2em 2em 2em;
+}
+
+footer{
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+footer a{
+    margin: 0 1em;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:988px){
+    header{
+        text-align: center;
+    }
+
+    header .text-container{
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 640px){
+    nav li {
+        display: none;
+    }
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+
+    header{
+        margin-top: 0;
+    }
+    .cta{
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
