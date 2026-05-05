@@ -1,12 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50% url(../../images/pexels-sanaan-3075993.jpg));
+    background-image: url(../../images/pexels-cottonbro-6804595.jpg);
+    background-size: cover;
+    background-repeat: none;
+
 }
-.navbar{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+header{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav{
-    display: inline-block;
+.logo{
+    color: black;
+    font-weight: bolder;
+    margin-left: 50px;
 }
-.nav ul{}
+nav{
+    margin-right: 0px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 70px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li:hover{
+    background-color: rgb(223, 220, 220);
+    padding: 10px 30px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255,0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.menubtn{
+    display: none;
+}
+@media(max-width: 800px){
+.hideOnMobile{
+    display: none;
+}
+.menubtn{
+    display: none;
+}
+}
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+}
+}
+
+
+

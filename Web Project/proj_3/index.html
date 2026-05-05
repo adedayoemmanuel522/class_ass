@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <div class="navbar">
-        <div class="nav">
-            <ul>
-                
-                <li class="logo"><a href="">Logo</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
-                <button><a href="">Login</a></button>
+    <header>
+        <div class="logo"><h2>Logo</h2></div>
+        <nav>            
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><img src="../../icons/icons8-left-arrow-50.png" height="26" viewBox="0  96 960 960" width="26"></li>
+                <li>Blog</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Login</li>
             </ul>
-        </div>
-    </div>
-   </header> 
+            <ul>
+                <li class="hideOnMobile">Blog</li>
+                <li class="hideOnMobile">Services</li>
+                <li class="hideOnMobile">Products</li>
+                <li class="hideOnMobile">About</li>
+                <li class="hideOnMobile">Login</li>
+                <li class="menubtn" showSidebar()><img src="../../icons/icons8-menu-50.png" height="26" viewBox="0  96 960 960" width="26"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
